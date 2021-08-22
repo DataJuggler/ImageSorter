@@ -6,11 +6,8 @@ https://youtu.be/YsL96hmkAqw
 
 This project uses the following DataJuggler Nuget packages:
 DataJuggler.Win.Controls
-
 DataJuggler.PixelDatabase
-
 DataJuggler.UltimateHelper
-
 
 using DataJuggler.PixelDatabase;
 using DataJuggler.UltimateHelper;
