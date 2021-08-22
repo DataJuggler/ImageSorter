@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DataJuggler.PixelDatabase" Version="5.1.5" />
+    <PackageReference Include="DataJuggler.Win.Controls" Version="5.8.2" />
+  </ItemGroup>
+
+</Project>
