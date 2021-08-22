@@ -1,6 +1,9 @@
 # ImageSorter
 Image Sorter makes it easy to sort an entire directory of images by color.
 
+Here is a short video:
+https://youtu.be/YsL96hmkAqw
+
 This project uses the following DataJuggler Nuget packages:
 DataJuggler.Win.Controls
 DataJuggler.PixelDatabase
