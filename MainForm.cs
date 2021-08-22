@@ -78,6 +78,13 @@ namespace ImageSorter
                 // If the strings outputFolder and sourceFolder both exist
                 if (TextHelper.Exists(outputFolder, sourceFolder))
                 {
+                    // Set the Text
+                    StatusLabel.Text = "Analyzing images, please be patient. This may take several minutes or longer.";
+
+                    // Refresh before starting
+                    this.Refresh();
+                    Application.DoEvents();
+
                     // Now perform the sort
                     ImageClassifier.Sort(sourceFolder, outputFolder, UpdateStatus);
                 }
@@ -119,6 +126,10 @@ namespace ImageSorter
                         // Set our message
                         StatusLabel.Text = message;
                     }
+
+                    // Refresh everything
+                    this.Refresh();
+                    Application.DoEvents();
                 }
             }
             #endregion
