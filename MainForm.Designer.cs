@@ -1,40 +1,61 @@
 ﻿
+
+#region using statements
+
+
+#endregion
+
 namespace ImageSorter
 {
+
+    #region class MainForm
+    /// <summary>
+    /// This is the designer for this form.
+    /// </summary>
     partial class MainForm
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
+        
+        #region Private Variables
         private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
+        private DataJuggler.Win.Controls.LabelTextBoxBrowserControl SourceControl;
+        private DataJuggler.Win.Controls.LabelTextBoxBrowserControl OutputControl;
+        private DataJuggler.Win.Controls.Button StartButton;
+        private System.Windows.Forms.ProgressBar Graph;
+        private System.Windows.Forms.Label StatusLabel;
+        #endregion
+        
+        #region Methods
+            
+            #region Dispose(bool disposing)
+            /// <summary>
+            ///  Clean up any resources being used.
+            /// </summary>
+            /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+            protected override void Dispose(bool disposing)
             {
-                components.Dispose();
+                if (disposing && (components != null))
+                {
+                    components.Dispose();
+                }
+                base.Dispose(disposing);
             }
-            base.Dispose(disposing);
-        }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
+            #endregion
+            
+            #region InitializeComponent()
+            /// <summary>
+            ///  Required method for Designer support - do not modify
+            ///  the contents of this method with the code editor.
+            /// </summary>
+            private void InitializeComponent()
+            {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.SourceControl = new DataJuggler.Win.Controls.LabelTextBoxBrowserControl();
             this.OutputControl = new DataJuggler.Win.Controls.LabelTextBoxBrowserControl();
             this.StartButton = new DataJuggler.Win.Controls.Button();
             this.Graph = new System.Windows.Forms.ProgressBar();
             this.StatusLabel = new System.Windows.Forms.Label();
+            this.FastFactorControl = new DataJuggler.Win.Controls.LabelTextBoxControl();
+            this.FastFactorInfo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // SourceControl
@@ -56,7 +77,7 @@ namespace ImageSorter
             this.SourceControl.LabelText = "Source Folder:";
             this.SourceControl.LabelTopMargin = 0;
             this.SourceControl.LabelWidth = 140;
-            this.SourceControl.Location = new System.Drawing.Point(47, 47);
+            this.SourceControl.Location = new System.Drawing.Point(47, 28);
             this.SourceControl.Name = "SourceControl";
             this.SourceControl.OnTextChangedListener = null;
             this.SourceControl.OpenCallback = null;
@@ -91,7 +112,7 @@ namespace ImageSorter
             this.OutputControl.LabelText = "Output Folder:";
             this.OutputControl.LabelTopMargin = 0;
             this.OutputControl.LabelWidth = 140;
-            this.OutputControl.Location = new System.Drawing.Point(47, 132);
+            this.OutputControl.Location = new System.Drawing.Point(47, 88);
             this.OutputControl.Name = "OutputControl";
             this.OutputControl.OnTextChangedListener = null;
             this.OutputControl.OpenCallback = null;
@@ -113,7 +134,7 @@ namespace ImageSorter
             this.StartButton.ButtonText = "Start";
             this.StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.StartButton.ForeColor = System.Drawing.Color.LemonChiffon;
-            this.StartButton.Location = new System.Drawing.Point(627, 293);
+            this.StartButton.Location = new System.Drawing.Point(627, 368);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(120, 48);
             this.StartButton.TabIndex = 2;
@@ -124,7 +145,7 @@ namespace ImageSorter
             // 
             // Graph
             // 
-            this.Graph.Location = new System.Drawing.Point(47, 236);
+            this.Graph.Location = new System.Drawing.Point(47, 324);
             this.Graph.Name = "Graph";
             this.Graph.Size = new System.Drawing.Size(700, 23);
             this.Graph.TabIndex = 3;
@@ -134,18 +155,60 @@ namespace ImageSorter
             // 
             this.StatusLabel.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.StatusLabel.ForeColor = System.Drawing.Color.LemonChiffon;
-            this.StatusLabel.Location = new System.Drawing.Point(47, 195);
+            this.StatusLabel.Location = new System.Drawing.Point(47, 295);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(700, 23);
             this.StatusLabel.TabIndex = 4;
             this.StatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelTextBoxControl1
+            // 
+            this.FastFactorControl.BackColor = System.Drawing.Color.Transparent;
+            this.FastFactorControl.BottomMargin = 0;
+            this.FastFactorControl.Editable = true;
+            this.FastFactorControl.Encrypted = false;
+            this.FastFactorControl.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FastFactorControl.LabelBottomMargin = 0;
+            this.FastFactorControl.LabelColor = System.Drawing.Color.LemonChiffon;
+            this.FastFactorControl.LabelFont = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FastFactorControl.LabelText = "* Fast Factor:";
+            this.FastFactorControl.LabelTopMargin = 0;
+            this.FastFactorControl.LabelWidth = 140;
+            this.FastFactorControl.Location = new System.Drawing.Point(47, 148);
+            this.FastFactorControl.MultiLine = false;
+            this.FastFactorControl.Name = "labelTextBoxControl1";
+            this.FastFactorControl.OnTextChangedListener = null;
+            this.FastFactorControl.PasswordMode = false;
+            this.FastFactorControl.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.FastFactorControl.Size = new System.Drawing.Size(200, 32);
+            this.FastFactorControl.TabIndex = 5;
+            this.FastFactorControl.TextBoxBottomMargin = 0;
+            this.FastFactorControl.TextBoxDisabledColor = System.Drawing.Color.LightGray;
+            this.FastFactorControl.TextBoxEditableColor = System.Drawing.Color.White;
+            this.FastFactorControl.TextBoxFont = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FastFactorControl.TextBoxTopMargin = 0;
+            this.FastFactorControl.Theme = DataJuggler.Win.Controls.Enumerations.ThemeEnum.Dark;
+            // 
+            // FastFactorInfo
+            // 
+            this.FastFactorInfo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FastFactorInfo.ForeColor = System.Drawing.Color.LemonChiffon;
+            this.FastFactorInfo.Location = new System.Drawing.Point(47, 193);
+            this.FastFactorInfo.Name = "FastFactorInfo";
+            this.FastFactorInfo.Size = new System.Drawing.Size(700, 47);
+            this.FastFactorInfo.TabIndex = 6;
+            this.FastFactorInfo.Text = "* Optional - enter a number such as 4, and every 4th pixel is inspected.\r\nThis is" +
+    " much faster, although not as accurate.\r\n";
+            this.FastFactorInfo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::ImageSorter.Properties.Resources.BlackImage;
-            this.ClientSize = new System.Drawing.Size(785, 367);
+            this.ClientSize = new System.Drawing.Size(785, 441);
+            this.Controls.Add(this.FastFactorInfo);
+            this.Controls.Add(this.FastFactorControl);
             this.Controls.Add(this.StatusLabel);
             this.Controls.Add(this.Graph);
             this.Controls.Add(this.StartButton);
@@ -157,15 +220,14 @@ namespace ImageSorter
             this.Text = "Image Sorter";
             this.ResumeLayout(false);
 
-        }
+            }
+        #endregion
 
         #endregion
 
-        private DataJuggler.Win.Controls.LabelTextBoxBrowserControl SourceControl;
-        private DataJuggler.Win.Controls.LabelTextBoxBrowserControl OutputControl;
-        private DataJuggler.Win.Controls.Button StartButton;
-        private System.Windows.Forms.ProgressBar Graph;
-        private System.Windows.Forms.Label StatusLabel;
+        private DataJuggler.Win.Controls.LabelTextBoxControl FastFactorControl;
+        private System.Windows.Forms.Label FastFactorInfo;
     }
-}
+    #endregion
 
+}

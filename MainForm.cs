@@ -74,10 +74,18 @@ namespace ImageSorter
                 // get the values selected
                 string outputFolder = OutputControl.Text;
                 string sourceFolder = SourceControl.Text;
+                int fastFactor = 0;
 
                 // If the strings outputFolder and sourceFolder both exist
                 if (TextHelper.Exists(outputFolder, sourceFolder))
                 {
+                    // if a value is entered in FastFactorControl
+                    if (FastFactorControl.HasText)
+                    {
+                        // Get the int value
+                        fastFactor = FastFactorControl.IntValue;
+                    }
+
                     // Set the Text
                     StatusLabel.Text = "Analyzing images, please be patient. This may take several minutes or longer.";
 
@@ -86,7 +94,11 @@ namespace ImageSorter
                     Application.DoEvents();
 
                     // Now perform the sort
-                    ImageClassifier.Sort(sourceFolder, outputFolder, UpdateStatus);
+                    ImageClassifier.Sort(sourceFolder, outputFolder, UpdateStatus, fastFactor);
+
+                    // Refresh Again
+                    this.Refresh();
+                    Application.DoEvents();
                 }
 
                 // Set the Text

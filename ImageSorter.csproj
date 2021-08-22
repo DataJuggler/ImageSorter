@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DataJuggler.PixelDatabase" Version="5.1.5" />
+    <PackageReference Include="DataJuggler.PixelDatabase" Version="5.1.6" />
     <PackageReference Include="DataJuggler.Win.Controls" Version="5.8.2" />
   </ItemGroup>
 
