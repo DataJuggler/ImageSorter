@@ -81,7 +81,7 @@ Green - 161
 Red - 120
 Blue - 100
 
-The Fast Factor value speeds up the sorting, however you do lose a little accuracy possibly depending on your image.
+The Fast Factor value speeds up the sorting, however you do lose a little accuracy possibly depending on your images.
 
 
 
