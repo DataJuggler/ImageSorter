@@ -78,7 +78,8 @@ Green - 161
 Red - 120
 Blue - 100
 
-I may build a fast sort method, that takes one out of every x pixels as getting every pixel is a bit expensive, but it's not too slow. More images take longer.
+I may build a fast sort method, that takes one out of every x pixels as getting every pixel is a bit expensive, 
+but it's not too slow. More images, and larger image sizes do take longer of course.
 
 
 
