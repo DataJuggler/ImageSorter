@@ -62,6 +62,7 @@ namespace ImageSorter
             // 
             this.SourceControl.BackColor = System.Drawing.Color.Transparent;
             this.SourceControl.BrowseType = DataJuggler.Win.Controls.Enumerations.BrowseTypeEnum.Folder;
+            this.SourceControl.ButtonColor = System.Drawing.Color.LemonChiffon;
             this.SourceControl.ButtonImage = ((System.Drawing.Image)(resources.GetObject("SourceControl.ButtonImage")));
             this.SourceControl.ButtonWidth = 48;
             this.SourceControl.DarkMode = false;
@@ -97,6 +98,7 @@ namespace ImageSorter
             // 
             this.OutputControl.BackColor = System.Drawing.Color.Transparent;
             this.OutputControl.BrowseType = DataJuggler.Win.Controls.Enumerations.BrowseTypeEnum.Folder;
+            this.OutputControl.ButtonColor = System.Drawing.Color.LemonChiffon;
             this.OutputControl.ButtonImage = ((System.Drawing.Image)(resources.GetObject("OutputControl.ButtonImage")));
             this.OutputControl.ButtonWidth = 48;
             this.OutputControl.DarkMode = false;
@@ -161,13 +163,14 @@ namespace ImageSorter
             this.StatusLabel.TabIndex = 4;
             this.StatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // labelTextBoxControl1
+            // FastFactorControl
             // 
             this.FastFactorControl.BackColor = System.Drawing.Color.Transparent;
             this.FastFactorControl.BottomMargin = 0;
             this.FastFactorControl.Editable = true;
             this.FastFactorControl.Encrypted = false;
             this.FastFactorControl.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FastFactorControl.Inititialized = true;
             this.FastFactorControl.LabelBottomMargin = 0;
             this.FastFactorControl.LabelColor = System.Drawing.Color.LemonChiffon;
             this.FastFactorControl.LabelFont = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -176,7 +179,7 @@ namespace ImageSorter
             this.FastFactorControl.LabelWidth = 140;
             this.FastFactorControl.Location = new System.Drawing.Point(47, 148);
             this.FastFactorControl.MultiLine = false;
-            this.FastFactorControl.Name = "labelTextBoxControl1";
+            this.FastFactorControl.Name = "FastFactorControl";
             this.FastFactorControl.OnTextChangedListener = null;
             this.FastFactorControl.PasswordMode = false;
             this.FastFactorControl.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -217,7 +220,7 @@ namespace ImageSorter
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Image Sorter";
+            this.Text = "Image Sorter 1.1.0";
             this.ResumeLayout(false);
 
             }
