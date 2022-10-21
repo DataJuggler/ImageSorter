@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DataJuggler.PixelDatabase" Version="7.0.1-rc1" />
+    <PackageReference Include="DataJuggler.PixelDatabase" Version="7.0.2-rc1" />
     <PackageReference Include="DataJuggler.Win.Controls" Version="7.0.0-rc1" />
   </ItemGroup>
 
