@@ -1,7 +1,7 @@
 # ImageSorter
 Image Sorter makes it easy to sort an entire directory of images by color.
 
-Update 10.21.2022: This project has been udpated to .NET7. To run this version, you will need Visual Studio 2022 Preview, which is available here:
+Update 10.21.2022: This project has been udpated to .NET7. To compile this version, you will need Visual Studio 2022 Preview, which is available here:
 https://visualstudio.microsoft.com/vs/preview/
 
 Here is a video I made a couple of days ago which includes Image sorter and Sub Image Creator:
