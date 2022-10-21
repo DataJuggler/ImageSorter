@@ -1,7 +1,13 @@
 # ImageSorter
 Image Sorter makes it easy to sort an entire directory of images by color.
 
-Here is a short video:
+Update 10.21.2022: This project has been udpated to .NET7. To run this version, you will need Visual Studio 2022 Preview, which is available here:
+https://visualstudio.microsoft.com/vs/preview/
+
+Here is a video I made a couple of days ago which includes Image sorter and Sub Image Creator:
+https://youtu.be/XUAOjQIoHhQ
+
+Here is another short video:
 https://youtu.be/YsL96hmkAqw
 
 This project uses the following DataJuggler Nuget packages:
