@@ -2,15 +2,15 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>ColorWheel.ico</ApplicationIcon>
     <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DataJuggler.PixelDatabase" Version="6.2.1" />
-    <PackageReference Include="DataJuggler.Win.Controls" Version="6.2.4" />
+    <PackageReference Include="DataJuggler.PixelDatabase" Version="7.0.1-rc1" />
+    <PackageReference Include="DataJuggler.Win.Controls" Version="7.0.0-rc1" />
   </ItemGroup>
 
 </Project>
