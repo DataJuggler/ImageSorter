@@ -57,7 +57,7 @@ UpdateStatus is a method for a delegate to callback from long operations:
         }
     }
     
-The UI is a very simple form with two LabelTextBoxBrowserControls, which make it simple to create a file or folder dialog.
+The UI is a very simple form with two LabelTextBoxBrowserControls, which make it easy to create a file or folder dialog.
 
 ImageClassifier is part of DataJuggler.PixelDatabase, and the way it works is it finds the average red, average green and average blue values.
 Next the Primary Color (red, green or blue) is determined, and also the Secondary and Minority colors are set.
