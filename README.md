@@ -1,7 +1,13 @@
 # ImageSorter
 Image Sorter makes it easy to sort an entire directory of images by color.
 
-Here is a short video:
+Update 10.21.2022: This project has been udpated to .NET7. To compile this version, you will need Visual Studio 2022 Preview, which is available here:
+https://visualstudio.microsoft.com/vs/preview/
+
+Here is a video I made a couple of days ago which includes Image sorter and Sub Image Creator:
+https://youtu.be/XUAOjQIoHhQ
+
+Here is another short video:
 https://youtu.be/YsL96hmkAqw
 
 This project uses the following DataJuggler Nuget packages:
@@ -51,7 +57,7 @@ UpdateStatus is a method for a delegate to callback from long operations:
         }
     }
     
-The UI is a very simple form with two LabelTextBoxBrowserControls, which make it simple to create a file or folder dialog.
+The UI is a very simple form with two LabelTextBoxBrowserControls, which make it easy to create a file or folder dialog.
 
 ImageClassifier is part of DataJuggler.PixelDatabase, and the way it works is it finds the average red, average green and average blue values.
 Next the Primary Color (red, green or blue) is determined, and also the Secondary and Minority colors are set.
