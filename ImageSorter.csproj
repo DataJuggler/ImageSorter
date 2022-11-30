@@ -5,12 +5,13 @@
     <TargetFramework>net7.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>ColorWheel.ico</ApplicationIcon>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
+    <Description>Image Sorter is a Windows Forms application that sorts a directory of images.</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DataJuggler.PixelDatabase" Version="7.0.2-rc1" />
-    <PackageReference Include="DataJuggler.Win.Controls" Version="7.0.0-rc1" />
+    <PackageReference Include="DataJuggler.PixelDatabase" Version="7.0.5" />
+    <PackageReference Include="DataJuggler.Win.Controls" Version="7.0.1" />
   </ItemGroup>
 
 </Project>
