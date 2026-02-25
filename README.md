@@ -1,5 +1,11 @@
+
 # ImageSorter
+
 Image Sorter makes it easy to sort an entire directory of images by color.
+
+# Updates
+
+Update 2.25.2026: This project was updated to .NET 10, and the output file name now includes the original filename.
 
 Update 10.21.2022: This project has been udpated to .NET7. To compile this version, you will need Visual Studio 2022 Preview, which is available here:
 https://visualstudio.microsoft.com/vs/preview/
